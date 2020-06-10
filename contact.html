@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>Contact Us</title>
+<style>
+body { 
+    background: lightblue url("bg.jpg") no-repeat fixed center; 
+	background-size: cover;
+}
+.bg{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(pic1.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+}
+
+.contact-title
+{
+	margin-top: 100px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 4s ease-in-out;
+}
+.contact-title h1{
+	font-size: 32px;
+	line-height: 10px;
+}
+.contact-title h2{
+	font-size: 16px;
+}
+form
+{
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+}
+.form-control
+{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+input
+{
+	height: 45px;
+}
+form .submit
+{
+	background: #ff5722;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+}
+form .submit:hover
+{
+	background-color: #f44336;
+	cursor: pointer;
+}
+.MB {
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+.SHOP {
+    margin-left: 50px;
+    margin-top: -70px;
+}
+#map {
+        width: 40%;
+        height: 400px;
+        background-color: grey;
+		float: left;
+      }
+#adrress {
+		width: 60%;
+		float: right;
+	}
+#both {
+		width: 100%;
+	}
+	
+</style>
+<script>
+function success()
+{
+window.alert("Your query has been successfully submitted! You will receive a reply within 24-48 hrs.");
+}
+</script>
+<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 30.516063, lng: 76.659828};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 14, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuFTnP3T4UeFlKj8j3MFGfYvj7JBrNJr0&callback=initMap">
+    </script>
+</head>
+<body>
+<hr width=1200px color=black align=top size=5>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="my%20account.html"><font color=black>My Account</font></a> &nbsp&nbsp|&nbsp&nbsp <a href="add%20to%20cart%20form.html"><font color=black>Add to Cart</font></a>&nbsp &nbsp| &nbsp&nbsp<a href="login.html"><font color=black>Login</font></a>&nbsp&nbsp |&nbsp&nbsp <a href="register.html"><font color=black>Register</font></a>
+<hr color=lightgrey width=1200px size=1>
+
+<div class=MB>
+<a href="go%20lets.html"><img src="Database\unnamed.png" height=30 width=30></a>
+</div>
+
+<div class=SHOP>
+<p align=top><h3 align=center><img src="Database\LOGO.png" height=50 width=250></h3></p>
+<hr color=lightgrey width=1200px size=1>
+</div>
+
+<hr color=black width=1200px size=3>
+
+<div class=bg>
+<hr color=black width=1200px size=1>
+<div class="contact-title">
+<h1>Say Hello</h1>
+<h2>We are always ready to serve you!</h2>
+</div>
+
+<div class="contact-form">
+<form id="contact-form" onsubmit="return success();">
+<input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+<input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+<input type="number" class="form-control" placeholder="Phone" required><br>
+<textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+<input type="submit" class="form-control submit" value="SEND MESSAGE">
+</form>
+</div>
+</div>
+
+<div id="both">
+
+<div id="map">
+</div>
+
+<div id="address">
+<center><h1><font face="calligraph421 BT" color=darkyellow>Wanna Reach us the old way?</font></h1></center>
+<pre>	Address: CHITKARA UNIVERSITY (PUNJAB)<br>
+		 Chandigarh-Patiala National Highway <br>
+		 Punjab 140 401<br>
+	Email: trendsetters@gmail.com<br>
+	Mobile: +91-9867564321</pre>
+
+</div>
+
+</div>
+
+</body>
+</html>

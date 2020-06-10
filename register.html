@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Register</title>
+
+<style>
+
+.SHOP {
+    margin-left: 50px;
+    margin-top: -50px;
+}
+.f
+{
+border:solid black;
+display:inline-block;
+border-shadow:5px 5px 5px;
+border-radius: 20px;
+padding: 40px;
+margin-left: 350px;
+}
+body { 
+    background: lightblue url("bg.jpg") no-repeat fixed center; 
+	background-size: cover;
+}
+.form-control
+{
+	width: 300px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+form .submit
+{
+	background: #cc3300;
+	border-color: transparent;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	height: 40px;
+	margin-top: 10px;
+}
+form .submit:hover
+{
+	background-color: #f44336;
+	cursor: pointer;
+}
+</style>
+</head>
+
+	
+<body>
+
+<body>
+
+<hr width=1200px color=black align=top size=5>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="my%20account.html"><font color=black>My Account</font></a> &nbsp&nbsp|&nbsp&nbsp <a href="add%20to%20cart%20form.html"><font color=black>Add to Cart</font></a>&nbsp &nbsp| &nbsp&nbsp<a href="login.html"><font color=black>Login</font></a>&nbsp&nbsp |&nbsp&nbsp <a href="register.html"><font color=black>Register</font></a>
+<hr color=lightgrey width=1200px size=1>
+
+<div class=MB>
+<a href="go%20lets.html" target="_top"><img src="Database\unnamed.png" height=30 width=30></a>
+</div>
+
+<div class=SHOP>
+<p align=top><h3 align=center><img src="Database\LOGO.png" height=65 width=315></h1></p>
+<hr color=lightgrey width=1200px size=1>
+</div>
+
+
+
+<hr color=black width=1200px size=3><br>
+
+
+<form action="login.html">
+<div class=f>
+<center><h1><font face="calligraph421 BT" color=darkyellow size=50>NEW USER</font></h1></center>
+<input type="text" class=form-control name="1" placeholder="First Name" required><br><BR>
+<input type="text" class=form-control name="2" placeholder="Last Name" required><br><BR>
+<input type="text" pattern="[6-9]{1}[0-9]{9}" title="Invalid Phone No." class=form-control name="3" placeholder="Phone" required><br><BR>
+<input type="email" class=form-control name="4" placeholder="Email" required><br><BR>
+<span style="font-size:18px">Gender:<input type="radio" name="gender" value=”Male” checked> Male 
+<input type="radio" name="gender" value=”Female”> Female<br><BR></span>
+<input type="Submit" class="form-control submit" value="Submit"> 
+<input type="Reset" class="form-control submit" value="Reset"> 
+</form>
+</html>
